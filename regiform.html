@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 500px;
+        background-color: rgb(237, 149, 193);
+        margin: auto;
+        padding: 25px;
+        border-radius: 6px;
+      }
+
+      form {
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 85%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        border-radius: 3px;
+      }
+
+      input[type="radio"] {
+        margin-right: 2px;
+      }
+
+      button[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button[type="submit"]:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" placeholder="Enter name" required /><br />
+
+        <label for="email"><b>Email:</b></label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+
+        <label for="psw"><b>Password:</b></label>
+        <input
+          type="password"
+          id="psw"
+          placeholder="Enter your password"
+          required
+        /><br />
+
+        <label for="pno"><b>Phone no:</b></label>
+        <input type="tel" id="pno" /><br />
+
+        <label for="gender"><b>Gender:</b></label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other">Other</label><br />
+
+        <label for="language"><b>Language:</b></label>
+        <select id="language">
+          <option value="Select">Select your language</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Tamil">Tamil</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Kannada">Kannada</option>
+          <option value="Urdu">Urdu</option>
+          <option value="Malayalam">Malayalam</option></select
+        ><br />
+
+        <label for="zip"><b>Zip code:</b></label>
+        <input type="number" id="zip" /><br />
+
+        <label for="about"><b>About:</b></label>
+        <textarea id="about" placeholder="Write about yourself"></textarea
+        ><br />
+
+        <button type="submit"><b>Register</b></button>
+      </form>
+    </div>
+  </body>
+</html>
